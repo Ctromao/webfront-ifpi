@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
     body{
-        background-color: #E9D9EB;
+        background-color: #fefbd8;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -18,18 +19,21 @@
         border-radius: 70%;
     }
 
-    h3{
-        color: #;
-    }
+    h3{color: #4040a1;}
     
-    p{
-        color: #1E293E;
-        ;
-    }
-    h2{color: #404BCE;
+    p,
+    li{
+        color: #1E293E;}
+
+    input{font-size: 1rem;
+    margin-bottom: 0.5rem;}
+
+    button{border-radius: 10px;}
+
+    h2{color: #4040a1;
     }
 
-    hr{color: #404BCE;}
+    hr{color: #36486b;}
 
     
     </style>
@@ -43,5 +47,41 @@
     <h3>Meu time do coração...</h3>
     <img src="https://diariodorio.com/wp-content/uploads/2019/09/149389_Ampliada.jpg" alt="MENGO"
     <h3><p>Seja feliz !!!</p></h3>
+    <h3>Minhas linguagens de programação:</h3>
+    <ul>
+        <li>Pyton</li>
+        <li>HTML</li>
+        <li>Java</li>
+    </ul>
+
+    <h2>Cadastre-se para receber novos vídeos</h2>
+    <input 
+    id="caixa_nome"
+    type="text"
+    placeholder="Digite seu nome..."/>
+
+    <input 
+    id="caixa_email"
+    type="text"
+    placeholder="Digite seu e-mail..."/>
+    
+    <button id="btn_cadastrar">Cadastrar </button>
+
+    <script>
+        const comp_btn_cadastrar = document.getElementById('btn_cadastrar');
+        const comp_caixa_nome= document.getElementById('caixa_nome');
+        const comp_caixa_email= document.getElementById('caixa_email);
+
+        comp_btn_cadastrar.onclick=() =>{
+            const comp_nome= comp_caixa_nome.value;
+            const comp_email= comp_caixa_email.value;
+
+            const mensagem=
+            "Olá"+nome+"Obrigado por cadastar seu email"+email+"!";
+
+            // console.log(mensagem);
+            alert(mensagem);
+        };   
+    </script>
 </body>
 </html>
